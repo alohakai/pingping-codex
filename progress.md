@@ -150,3 +150,11 @@
 - 已通过网页提交 `README.md`，远端 `main` 分支和首个提交已成功建立。
 - 因网页编辑器创建的脚本不会保留 Git executable bit，README 启动命令改为
   `zsh scripts/run.sh`，launchd 模板也明确使用 `/bin/zsh` 执行脚本。
+- 通过 GitHub 网页编辑器逐项提交其余项目文件，已覆盖：
+  - 环境变量模板、Git 忽略规则和 Master 指令。
+  - 项目配置、launchd 模板和启动脚本。
+  - `memory/` 的会话、worker、公共与私有空间占位。
+  - Feishu/Codex 网关全部 Python 源码。
+  - 13 项单元测试及项目元数据。
+- 远端 README 已更新为最新本地版本；整个上传过程未提交 `.env`、数据库、
+  真实会话记忆、App Secret 或构建产物。
