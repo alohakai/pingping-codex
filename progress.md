@@ -133,3 +133,9 @@
   并被明确禁止向记忆文件写入密钥、令牌或密码。
 - 新增 5 项相关测试，完整测试数增加到 13；Ruff、格式检查和全部测试通过。
 - 重新构建 wheel 后，Codex App Server 配置检查通过。
+- 初始化本地 Git 仓库并创建首个提交
+  `11d8fe3 feat: add Feishu Codex master-worker gateway`。
+- 推送 `alohakai/pingping-codex` 时发现本机 HTTPS Git 无凭证、SSH key 未获
+  GitHub 授权，已连接的 GitHub App 写接口也返回 403；本地提交完整保留，
+  等待用户授权使用已有 Chrome 登录会话或补充 Git 命令行认证后继续推送。
+- 安装新版本后重新启动机器人，Codex App Server 与飞书长连接均已成功启动。
