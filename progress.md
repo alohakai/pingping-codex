@@ -158,3 +158,11 @@
   - 13 项单元测试及项目元数据。
 - 远端 README 已更新为最新本地版本；整个上传过程未提交 `.env`、数据库、
   真实会话记忆、App Secret 或构建产物。
+- 从 GitHub CLI 官方发布包安装并校验 `gh 2.96.0`，可执行文件位于
+  `~/.local/bin/gh`。
+- 已通过 GitHub 设备授权登录 `alohakai`，Git 操作协议配置为 HTTPS。
+- 使用保留本地项目树的 merge commit
+  `ef5dcce chore: reconcile GitHub web import` 合并本地与网页导入历史，
+  后续可通过普通 fast-forward push 推送，无需强制覆盖远端。
+- 准备使用标准 `git push -u origin main` 推送最终提交，并在推送后核对
+  本地 `HEAD` 与 `origin/main`。
