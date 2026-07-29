@@ -164,5 +164,7 @@
 - 使用保留本地项目树的 merge commit
   `ef5dcce chore: reconcile GitHub web import` 合并本地与网页导入历史，
   后续可通过普通 fast-forward push 推送，无需强制覆盖远端。
-- 准备使用标准 `git push -u origin main` 推送最终提交，并在推送后核对
-  本地 `HEAD` 与 `origin/main`。
+- 首次 push 发现 Git 尚未绑定 `gh` 凭据助手；执行 `gh auth setup-git`
+  后已使用标准 `git push -u origin main` 成功推送，未使用 force push。
+- 远端 `main` 已由 `29ff5c5` 快进到 `ee83052`，下一步核对本地
+  `HEAD` 与 `origin/main` 并提交本条完成日志。
