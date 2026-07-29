@@ -95,7 +95,7 @@ FEISHU_APP_SECRET=xxx
 启动机器人：
 
 ```bash
-./scripts/run.sh
+zsh scripts/run.sh
 ```
 
 本地模拟一条飞书消息：
