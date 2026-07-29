@@ -139,3 +139,9 @@
   GitHub 授权，已连接的 GitHub App 写接口也返回 403；本地提交完整保留，
   等待用户授权使用已有 Chrome 登录会话或补充 Git 命令行认证后继续推送。
 - 安装新版本后重新启动机器人，Codex App Server 与飞书长连接均已成功启动。
+- 用户授权使用 Chrome 的 GitHub 登录会话后，已确认 Chrome 当前登录账户可管理
+  `alohakai/pingping-codex`，并打开空仓库的上传页面。
+- 使用 `git archive HEAD` 生成仅包含已提交文件的临时上传目录，复核其中不含
+  `.env`、SQLite、真实会话记忆或构建产物。
+- Chrome 扩展当前未启用“允许访问文件网址”，文件选择器拒绝上传；GitHub
+  页面已保留，等待用户开启该权限后继续。
