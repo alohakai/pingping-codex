@@ -1,0 +1,22 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+data/*.db
+data/*.db-*
+logs/*.log
+work/
+
+# 飞书会话和 worker 的运行时记忆可能包含私人上下文，不提交到公开仓库。
+memory/chats/*
+!memory/chats/.gitkeep
+memory/workers/*
+!memory/workers/.gitkeep
+memory/shared/private/*
+!memory/shared/private/.gitkeep

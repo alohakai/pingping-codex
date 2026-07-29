@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feishu-codex"
+version = "0.1.0"
+description = "A persistent Feishu bot gateway for Codex master and worker threads."
+requires-python = ">=3.11"
+dependencies = [
+  "lark-oapi>=1.7.1,<2",
+]
+
+[project.scripts]
+feishu-codex = "feishu_codex.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

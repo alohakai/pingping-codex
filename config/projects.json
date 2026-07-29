@@ -1,0 +1,7 @@
+{
+  "gateway": {
+    "path": "..",
+    "description": "飞书 Codex 网关项目本身",
+    "sandbox": "workspace-write"
+  }
+}
