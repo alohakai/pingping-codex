@@ -168,3 +168,7 @@
   后已使用标准 `git push -u origin main` 成功推送，未使用 force push。
 - 远端 `main` 已由 `29ff5c5` 快进到 `ee83052`，下一步核对本地
   `HEAD` 与 `origin/main` 并提交本条完成日志。
+- 推送完成后执行 `git fetch origin main`，确认本地 `HEAD` 与
+  `origin/main` 完全一致，工作区干净且默认分支为 `main`。
+- 检查运行中的机器人时发现旧飞书长连接曾异常退出；已停止旧进程并重新运行
+  `zsh scripts/run.sh`，Codex App Server 与飞书长连接线程均已重新启动。
