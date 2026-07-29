@@ -145,3 +145,8 @@
   `.env`、SQLite、真实会话记忆或构建产物。
 - Chrome 扩展当前未启用“允许访问文件网址”，文件选择器拒绝上传；GitHub
   页面已保留，等待用户开启该权限后继续。
+- 用户继续后再次验证，Chrome 文件选择器仍拒绝单文件与目录上传，因此改用
+  GitHub 网页编辑器创建文件。
+- 已通过网页提交 `README.md`，远端 `main` 分支和首个提交已成功建立。
+- 因网页编辑器创建的脚本不会保留 Git executable bit，README 启动命令改为
+  `zsh scripts/run.sh`，launchd 模板也明确使用 `/bin/zsh` 执行脚本。

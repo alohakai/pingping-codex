@@ -7,6 +7,7 @@
   <string>com.feishu-codex</string>
   <key>ProgramArguments</key>
   <array>
+    <string>/bin/zsh</string>
     <string>/absolute/path/to/pingping-codex/scripts/run.sh</string>
   </array>
   <key>WorkingDirectory</key>
